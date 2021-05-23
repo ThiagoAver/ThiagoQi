@@ -1,0 +1,2 @@
+# ThiagoQi
+Atividades da QI
