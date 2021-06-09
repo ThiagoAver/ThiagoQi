@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device width, initical-scale=1, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="css/estilo.css" rel="stylesheet">
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+	
+	</head>
+	<body >
+	<div style="background-color:#B0E0E6">
+	
+	<!--note-->
+    <div style="background: yellow; padding:15px;">
+    <h4 style="text=align: left;">League of Legends</h4>
+	</div>
+
+	<!-- Header -->
+    <div class="header">
+    <h1>Landing Page</h1>
+    <p>With a <b>flexible</b> layout.</p>
+    </div>
+
+	<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">Inicio</a>
+  <a href="#">O que é LOL?</a>
+  <a href="#">Jogos da Riot</a>
+  <a href="#">Personagens</a>
+  <a href="#">Runeterra</a>
+  <a href="#">Historia</a>
+</div>
+
+<div class="mb-3" align="center">
+<form name="formCadastro" onsubmit="return validarFormulario()" method="post" style="width:500px;">
+    
+  <label for="exampleFormControlInput1" class="form-label">Escreva seu Nome</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome" name="nome">
+    <div class="col-12">
+    <button class="btn btn-primary" type="submit" name="Enviar">Enviar</button>
+  </div>
+</form>
+</div>
+
+<script>
+    function validarFormulario(){
+        var nomePessoa = document.forms["formCadastro"]["nome"].value;
+        if (nomePessoa == "") {
+            alert("Favor informar o seu nome!");
+            return false;     
+        }
+        else{
+            alert("Olá, " + nomePessoa + " !");
+            return true;
+        }
+    }
+</script>
+
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>League of legends</h2>
+    <h5>Fotos do Game:</h5>
+	
+    <div class="fakeimg" style="height:500px; margin-top" >
+	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner" align="center">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="img/lol1.jpg" class="d-block w-50" alt="Primeiro Slide" style="margin-top: 50px;"  >
+    </div>
+	
+	<div class="carousel-item" data-bs-interval="10000">
+      <img src="img/lol2.jpg" class="d-block w-50" alt="Segundo Slide" style="margin-top: 50px;" >
+    </div>
+	
+	<div class="carousel-item" data-bs-interval="10000">
+      <img src="img/lol4.jpg" class="d-block w-50" alt="Terceiro Slide" style="margin-top: 50px;" >
+    </div>
+	
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden d-block w-50" >Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Proximo</span>
+  </button>
+</div>
+	</div>
+    <p>League of Legends é um jogo eletrônico online gratuito, do gênero batalha multijogador, desenvolvido e publicado pela Riot Games em 2009, para os sistemas Microsoft Windows e Mac OS X, inspirado no modo Defense of the Ancients do jogo Warcraft III: The Frozen Throne.</p>
+    
+	<h3>Como Jogar</h3>
+    <p>League of Legends é um jogo de estratégia em que duas equipes de cinco poderosos Campeões se enfrentam para destruir a base uma da outra. Escolha entre mais de 140 Campeões para realizar jogadas épicas, assegurar abates e destruir torres conforme você luta até a vitória.</p>
+    <div class="fakeimg" style="height:250;"><img src="img/mapa.png"/>
+	</div>
+	<div class="main">
+    <h2>LOL</h2>
+    <h5>Jogos da Riot</h5>
+    <div class="fakeimg" style="height:250;">
+		<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner" align="center">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="img/Valorant.jfif" class="d-block w-50" alt=" 1Slide" >
+    </div>
+	
+	<div class="carousel-item" data-bs-interval="10000">
+      <img src="img/lor.jpg" class="d-block w-50" alt=" 2Slide" >
+    </div>
+	
+	<div class="carousel-item" data-bs-interval="10000">
+      <img src="img/Riot.jpg" class="d-block w-50" alt=" 3Slide" >
+    </div>
+	
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden d-block w-50" >Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Proximo</span>
+  </button>
+</div>
+	
+	</div>
+    <p>Ruined King: Uma História de League of Legends. ...
+CONV/RGENCE: A League of Legends Story
+League of Legends: Wild Rift
+LoL Esports Manager
+Valorant e LOR sao alguns os games da desevovera RIOT a qual vem crescendo cada di mas no mercado de desenvolvimento e Games
+</p>
+    <br>
+    <h2>LOl no Mundo</h2>
+    <h5>Popularidade</h5>
+    <div class="fakeimg" style="height:250;"><img src="img/mundo.jfif"/></div>
+    <p>Em um comunicado publicado em novembro de 2011, a Riot Games afirmou que League of Legends tinha 32.5 milhões de jogadores, sendo que 11.5 milhões jogavam mensalmente, dos quais 4.2 milhões jogavam diariamente. De acordo com a Riot, em outubro de 2013, o jogo tinha 12 milhões de jogares ativos diariamente e 32 milhões de jogadores ativos mensalmente. Em janeiro de 2014, o jogo tinha 27 milhões de jogadores ativos diariamente, 7.5 milhões de jogadores simultâneos nos horários de pico e 67 milhões de jogadores ativos mensalmente.</p>
+	
+</div>
+
+	<section class="container">
+		<div style="width:100%; border-radius:4rem; border:solid 1px; background:Red; padding:2%;">
+
+			<form action="endereço da página e/ou arquivo que processa os dados" method="post">
+				<legend>Componentes de Formulário</legend>
+				<hr>
+
+				<!--Entrada de dados do tipo texto-->
+				<label for="nome" style="padding-top:3%">Nome</label>
+				<input type="text" id="nome" name="nome" class="form-control" required placeholder="Digite o seu nome">
+
+				<!--Entrada de dados do tipo email-->
+				<label for="email" style="padding-top:3%">Email</label>
+				<input type="email" id="email" name="email" class="form-control" placeholder="Digite seu email" required>
+
+<button type="button" class="btn">Enviar</button>
+</div>
+
+<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
